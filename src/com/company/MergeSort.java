@@ -3,7 +3,7 @@ package com.company;
 public class MergeSort {
     public static void main(String[] args) {
         //测试数据
-        int A[] = { 1, 6, 4, 5, 2, 9, 7, 23, 56, 43, 99 };
+        int[] A = { 1, 6, 4, 5, 2, 9, 7, 23, 56, 43, 99 };
         // 排序前
         System.out.println("排序前：");
         for (int a : A) {
@@ -27,8 +27,9 @@ public class MergeSort {
 
     //递归
     public static void sort(int[] A, int start, int end) {
-        if (start >= end)
+        if (start >= end) {
             return;
+        }
         // 找出中间索引
         int mid = (start + end) / 2;
         // 对左边数组进行递归
@@ -37,7 +38,6 @@ public class MergeSort {
         sort(A, mid + 1, end);
         // 合并
         merge(A, start, mid, end);
-
     }
 
     // 将两个数组进行归并，归并前面2个数组已有序，归并后依然有序
@@ -62,8 +62,9 @@ public class MergeSort {
             temp[k++] = A[j++];
         }
         // 将临时数组中的内容拷贝回原数组中 （left-right范围的内容）
-        for (int m = 0; m < k; m++) {
-            A[m + start] = temp[m];
-        }
+//        for (int m = 0; m < k; m++) {
+//            A[m + start] = temp[m];
+//        }
+        System.arraycopy(temp, 0, A, start, k);//拷贝的优化
     }
 }
