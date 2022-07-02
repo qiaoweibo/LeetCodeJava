@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class TwoSum {
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);//创建Scanner对象，接受从控制台输入
+        Scanner input = new Scanner(System.in);//创建Scanner对象，接受从控制台输入
         int[] nums = {2, 7, 11, 15};//普通数组的声明
         int[] nums_two = twoSum(nums, 9);
         for (int i = 0; i < nums_two.length; ++i) {
