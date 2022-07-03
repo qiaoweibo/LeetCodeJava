@@ -1,8 +1,6 @@
 package com.company;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
 
 public class TwoSum {
     public static void main(String[] args) {
@@ -14,7 +12,7 @@ public class TwoSum {
         }
 
         //下面是动态数组的测试
-        ArrayList<Integer> list = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
         int n = input.nextInt();
         for (int i = 0; i < n; ++i) {
             int m = input.nextInt();
@@ -26,7 +24,8 @@ public class TwoSum {
     }
 
     public static int[] twoSum(int[] nums, int target) {
-        HashMap<Integer, Integer> hashMap = new HashMap<>();
+        // HashMap<Integer, Integer> hashMap = new HashMap<>();
+        Map<Integer, Integer> hashMap = new HashMap<>();
         for (int i = 0; i < nums.length; ++i) {
             if (hashMap.containsKey(target - nums[i])) {
                 return new int[]{hashMap.get(target - nums[i]), i};
