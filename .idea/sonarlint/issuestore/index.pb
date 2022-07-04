@@ -23,3 +23,7 @@ O
 src/com/company/ThreadTest.java,d/e/de0b2ab04ed898c32556b429e8b09c1fbc99f53e
 N
 src/com/company/MergeSort.java,4/4/4462e1c792970e5f9026cdf120dfa9d581d2c1a2
+w
+G.idea/sonarlint/issuestore/4/8/48b0e50834af140af110ff1644ed0dbab95880fd,a/5/a5463b86423e29a4c0775fdeb1e6efb18a378918
+K
+src/com/company/TwoSum.java,7/9/79fdf6f9f95bc3d37c6e3a14cb2858d0e3c38eec
