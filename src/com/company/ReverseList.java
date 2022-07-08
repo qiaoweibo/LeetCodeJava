@@ -2,6 +2,10 @@ package com.company;
 
 import java.util.Scanner;
 
+/**
+ * @author QiaoWeiBo
+ * @date 2022/7/9 12:30 AM
+ */
 public class ReverseList {
     public static void main(String[] args) {
         ListNode head = new ListNode(-1);

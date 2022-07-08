@@ -2,6 +2,10 @@ package com.company;
 
 import java.util.Arrays;
 
+/**
+ * @author QiaoWeiBo
+ * @date 2022/7/9 12:30 AM
+ */
 public class ThreeSumClosest {
     public static void main(String[] args) {
         int[] nums = {-1, 2, 1, 4};

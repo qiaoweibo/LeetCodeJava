@@ -2,13 +2,23 @@ package com.company;
 
 import java.util.*;
 
+/**
+ * @author QiaoWeiBo
+ * @date 2022/7/9 12:30 AM
+ */
 public class TwoSum {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);//创建Scanner对象，接受从控制台输入
-        int[] nums = {2, 7, 11, 15};//普通数组的声明
-        int[] nums_two = twoSum(nums, 9);
-        for (int i = 0; i < nums_two.length; ++i) {
-            System.out.print(nums_two[i] + " ");
+        /**
+         * 创建Scanner对象，接受从控制台输入
+         * int[] nums = {2, 7, 11, 15};//普通数组的声明
+         * @author QiaoWeiBo
+         * @date 2022/7/9 12:31 AM
+         */
+        Scanner input = new Scanner(System.in);
+        int[] nums = {2, 7, 11, 15};
+        int[] numsTwo = twoSum(nums, 9);
+        for (int i = 0; i < numsTwo.length; ++i) {
+            System.out.print(numsTwo[i] + " ");
         }
 
         //下面是动态数组的测试
@@ -25,7 +35,7 @@ public class TwoSum {
 
     public static int[] twoSum(int[] nums, int target) {
         // HashMap<Integer, Integer> hashMap = new HashMap<>();
-        Map<Integer, Integer> hashMap = new HashMap<>();
+        Map<Integer, Integer> hashMap = new HashMap<>(0);
         for (int i = 0; i < nums.length; ++i) {
             if (hashMap.containsKey(target - nums[i])) {
                 return new int[]{hashMap.get(target - nums[i]), i};

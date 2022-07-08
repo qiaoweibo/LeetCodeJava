@@ -1,5 +1,9 @@
 package com.company;
 
+/**
+ * @author QiaoWeiBo
+ * @date 2022/7/9 12:30 AM
+ */
 public class MergeSort {
     public static void main(String[] args) {
         //测试数据
