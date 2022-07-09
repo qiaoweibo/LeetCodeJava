@@ -9,7 +9,7 @@ import java.util.*;
 public class TwoSum {
     public static void main(String[] args) {
         /**
-         * 创建Scanner对象，接受从控制台输入
+         * Scanner input = new Scanner(System.in);创建Scanner对象，接受从控制台输入
          * int[] nums = {2, 7, 11, 15};//普通数组的声明
          * @author QiaoWeiBo
          * @date 2022/7/9 12:31 AM
