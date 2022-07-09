@@ -14,7 +14,7 @@ public class QuickSort {
         System.out.println();
     }
 
-    public static int OnceSort(int[] nums, int low, int high) {
+    public static int onceSort(int[] nums, int low, int high) {
         int key = nums[low];
         while (low < high) {
             while (low < high && nums[high] >= key) {
@@ -34,17 +34,17 @@ public class QuickSort {
         return low;
     }
 
-    public static void QuickSort(int[] nums, int low, int high) {
+    public static void quickSort(int[] nums, int low, int high) {
         if (low >= high) {
             return;
         }
-        int mid = OnceSort(nums, low, high);
-        QuickSort(nums, low, mid - 1);
-        QuickSort(nums, mid + 1, high);
+        int mid = onceSort(nums, low, high);
+        quickSort(nums, low, mid - 1);
+        quickSort(nums, mid + 1, high);
     }
 
     public static int[] sortArray(int[] nums) {
-        QuickSort(nums, 0, nums.length - 1);
+        quickSort(nums, 0, nums.length - 1);
         return nums;
     }
 }

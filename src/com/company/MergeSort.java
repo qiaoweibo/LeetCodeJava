@@ -14,7 +14,7 @@ public class MergeSort {
        System.out.println();
    }
 
-    public static void Merge(int[] nums, int lowOne, int highOne, int lowTwo, int highTwo) {
+    public static void merge(int[] nums, int lowOne, int highOne, int lowTwo, int highTwo) {
         int i = lowOne;
         int j = lowTwo;
         int k = 0;
@@ -33,23 +33,23 @@ public class MergeSort {
         while (j <= highTwo) {
             tmp[k++] = nums[j++];
         }
-        for (int m = 0; m < k; ++m) {
-            nums[lowOne + m] = tmp[m];
+        for (i = 0; i < k; ++i) {
+            nums[lowOne + i] = tmp[i];
         }
     }
 
-    public static void MergeSort(int[] nums, int low, int high) {
+    public static void mergeSort(int[] nums, int low, int high) {
         if (low >= high) {
             return;
         }
         int mid = (high - low) / 2 + low;
-        MergeSort(nums, low, mid);
-        MergeSort(nums, mid + 1, high);
-        Merge(nums, low, mid, mid + 1, high);
+        mergeSort(nums, low, mid);
+        mergeSort(nums, mid + 1, high);
+        merge(nums, low, mid, mid + 1, high);
     }
 
     public static int[] sortArray(int[] nums) {
-        MergeSort(nums, 0, nums.length - 1);
+        mergeSort(nums, 0, nums.length - 1);
         return nums;
     }
 }
