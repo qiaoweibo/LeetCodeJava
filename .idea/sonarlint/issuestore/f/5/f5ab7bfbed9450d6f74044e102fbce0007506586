@@ -1,0 +1,17 @@
+
+J
+java:S3740"/Provide the parametrized type for this generic.(Âôæùùÿÿÿÿ
+n	java:S135$"YReduce the total number of break and continue statements in this loop to use at most one.(Š¢õ
+n	java:S135"YReduce the total number of break and continue statements in this loop to use at most one.(¡«öÏ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(ü„ê!
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ã¿¢Ôùÿÿÿÿ
+m
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(â¢Öàüÿÿÿÿ
+Y
+java:S1854"7Remove this useless assignment to local variable "two".(õàÊÑùÿÿÿÿ8üİõ0
+J
+java:S1481"(Remove this unused "two" local variable.(õàÊÑùÿÿÿÿ8ıİõ0
+7
+java:S1116:"Remove this empty statement.(Åñ­õşÿÿÿÿ
+7
+java:S1116="Remove this empty statement.(Åñ­õşÿÿÿÿ

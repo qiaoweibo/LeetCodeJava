@@ -1,0 +1,6 @@
+
+„
+java:S4165
+"bRemove this useless assignment; "nums" already holds the assigned value along all execution paths.(ô¸á«şÿÿÿÿ8õô¶0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(¾¸ãˆÿÿÿÿÿ8±Á­0
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ8±Á­0

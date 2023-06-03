@@ -1,0 +1,9 @@
+
+]	java:S125"<This block of commented-out lines of code should be removed.(×À´·üÿÿÿÿ8›ã€õ0
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ùå†8Ñƒõ0
+T
+java:S1659%">Declare "r" and all following declarations on a separate line.(Ê€‰
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ê„‡õ0
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ê„‡õ0
